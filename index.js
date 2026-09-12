@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+console.log("This is first program");
+let a = 10;
+let b = 20;
+console.log(a);
+console.log(b);
+console.log(a == b);
+let fullname = "Harry";
+let lastname = "Verma";
+console.log(fullname);
+console.log(lastname);
+console.log(fullname == lastname);

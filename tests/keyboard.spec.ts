@@ -1,0 +1,18 @@
+import{test,expect}from '@playwright/test'
+test("This is for keyboard press",async({page})=>{
+await page.goto("https://www.facebook.com/")
+await page.waitForTimeout(5000)
+await page.getByRole('link',{name: "Create new account"}).click()
+await page.waitForTimeout(5000)
+await page.getByRole('textbox',{name: "Name First name Surname"}).click()
+await page.waitForTimeout(5000)
+await page.keyboard.type("Abc@gmail.com",{delay:1500})
+await page.keyboard.press('Meta+A')
+await page.keyboard.press('Meta+C')
+await page.keyboard.press('Tab')
+await page.waitForTimeout(5000)
+await page.keyboard.press('Tab')
+await page.waitForTimeout(5000)
+await page.keyboard.press('Meta+V')
+await page.waitForTimeout(5000)
+})
